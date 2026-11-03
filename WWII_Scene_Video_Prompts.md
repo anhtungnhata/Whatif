@@ -1,169 +1,88 @@
-# "STEEL DAWN" — Per-Scene AI Video Prompts (16:9)
+# "STEEL DAWN" — Per-Scene AI Video Prompts (LEGO brick style, 16:9)
 
-Ready-to-paste prompts for AI video generators (Canva/Seedance, Kling, Veo, Sora, Runway, Higgsfield, Hailuo…).
-Most tools generate **5–10 s per clip**, so each scene is split into clips. Total ≈ **8:00**.
+Ready-to-paste prompts for AI video generators (Canva/Seedance, Kling, Veo, Runway, Hailuo…).
+Clips are 5–12 s; total ≈ 8:00. Main character: **Karl**, the German soldier from the reference image.
 
 ## How to use
 1. Paste **[STYLE]** at the start of every prompt, then the clip prompt.
-2. Wherever a prompt says `[C1]`, `[C2]`… paste that character's block below
-   (replace with the look from your reference image). If your tool supports reference images,
-   upload the character image instead and keep the text short.
-3. Generate with **aspect ratio 16:9**, no voice/dialogue. Turn tool audio **off** (or SFX-only) —
-   add SFX + music in editing for continuity.
-4. Use the **last frame of each clip as the first frame (image-to-video) of the next** to keep scenes seamless.
+2. Replace `[KARL]`, `[OTTO]`… with the character blocks below. If your tool accepts reference images,
+   upload the minifigure photo for Karl and keep the text short.
+3. 16:9, no voice. Turn generated audio off (or SFX-only) and add SFX and music in editing.
+4. For seamless scenes, use the last frame of each clip as the first frame (image-to-video) of the next.
 
-### [STYLE] — paste first in every prompt
+### [STYLE]
 ```
-3D animated cinematic film, high-end CGI, realistic WWII 1944 Normandy, 16:9 widescreen,
-volumetric smoke and dust, film grain, desaturated teal-and-orange grade, dramatic lighting,
-motion blur, highly detailed, no text, no subtitles, no logos, no gore.
+Brick-built toy animation (brickfilm), everything made of glossy plastic toy bricks and minifigures with
+cylindrical heads, printed faces, C-shaped hands and visible studs, macro toy-photography depth of field,
+WWII Normandy 1944, 16:9 widescreen, soft volumetric smoke, film grain, no logos, no text,
+no swastikas or political insignia, no blood.
 ```
 
 ### Character blocks
-- **[C1] Sgt. Jack Reed:** `US Army sergeant, late 20s, square jaw, stubble, blue eyes, M1 helmet with camouflage netting and a small photo tucked into the helmet strap, olive-drab M1941 jacket, ammo belt, Thompson submachine gun`
-- **[C2] Pvt. Tommy Walsh:** `young US Army private, 19, freckles, thin face, slightly oversized M1 helmet, M1 Garand rifle, harmonica in chest pocket`
-- **[C3] Doc Bell:** `US Army combat medic, early 30s, calm eyes, white helmet with red cross markings, red cross armband, medic bag, matchstick in his mouth`
-- **[C4] Capt. Holloway:** `American fighter pilot, leather flight helmet, goggles, oxygen mask, white scarf, P-51 Mustang with "LUCKY LADY" nose art`
-- **[C5] Lt. Novak:** `B-17 bomber pilot, sheepskin flight jacket, headset, heavy gloves`
-- **[C6] Sgt. Cruz:** `US tank commander, tanker helmet, goggles on forehead, standing in the hatch of an M4 Sherman named "IRON MAIDEN"`
-- **[C8] German gunner:** `German soldier, Stahlhelm helmet, grey-green uniform, scar on cheek, firing an MG-42`
-- **[C9] Tiger commander:** `German panzer commander, black uniform, headset, binoculars, in the hatch of a Tiger I tank`
+- **[KARL]** `German infantry minifigure: dark grey steel helmet with chin strap, angry gritted-teeth printed face with thick eyebrows, dirt smudges and scratches, field-grey tunic with dark green collar, tan Y-strap suspenders, black belt pouches, small grey chest pouch, grey trousers, mud-splattered dark boots, dark brown bolt-action rifle with long bayonet`
+- **[OTTO]** `older German sergeant minifigure, grey moustache, tired eyes, helmet with wire foliage, field-grey uniform, MG-42 machine gun`
+- **[HANS]** `very young German recruit minifigure, pale round face with big scared eyes, oversized helmet, field-grey uniform, rifle too big for him`
+- **[JACK]** `US Army sergeant minifigure, olive helmet with netting and tiny photo tile in the strap, stubble, Thompson SMG`
+- **[TOMMY]** `young US private minifigure, freckles, oversized olive helmet, M1 Garand`
+- **[DOC]** `US medic minifigure, helmet with red crosses, red-cross armband, medic bag, matchstick in mouth`
+- **[GIRL]** `little French girl minifigure, brown hair, blue dress`
 
 ---
 
 ## PROLOGUE (0:00 – 0:40)
+- **1A (8 s):** `Black screen with glowing sparks and tiny brick pieces drifting, slowly turning into a candle flame.` *(add the title in the editor)*
+- **2A (10 s):** `Inside a grey brick bunker at night lit by one candle, [KARL] sits on an ammo crate and looks at a tiny photo tile of his mother and sister, then puts it in his chest pocket. Slow dolly in.`
+- **2B (10 s):** `In the candlelit bunker, [OTTO] cleans an MG-42 and hands [KARL] a tin cup; [KARL] lays his jacket over [HANS] sleeping in the corner.`
+- **3A (6 s):** `At dawn [KARL] peers through the bunker's firing slit into thick sea fog; the fog lifts to reveal hundreds of brick-built warships on the horizon; rack focus from his face to the fleet.`
+- **3B (6 s):** `[KARL] steps back, shouts silently and slams an alarm bell; camera whips up to brick B-17 bombers emerging from dawn clouds.`
 
-### Scene 1 — Title (8 s)
-- **1A (8 s):** `Pure black screen, glowing metallic title "STEEL DAWN" slowly forming from sparks, sea spray dissolving the letters at the end, slow push-in.`
-  *(Tip: make the title in your editor; generate only the sparks/sea-spray background.)*
+## ACT 1 (0:40 – 2:10)
+- **4A (10 s):** `German minifigure soldiers scramble from bunks into brick trenches on a cliff top; [OTTO] mounts the MG-42 at the slit. Handheld tracking.`
+- **4B (10 s):** `[KARL] shakes [HANS] awake and pushes the oversized helmet onto his head; alarm bell ringing.`
+- **5A (8 s):** `Brick B-17 bomb bays open high above the clouds; bombs drop in slow motion; camera follows one bomb down toward the cliffs.`
+- **5B (11 s):** `Explosions throw bricks, sand and studs across the cliff trenches; a trench wall collapses on [HANS]; [KARL] digs him out with his hands and pulls him free. Shaking low camera.`
+- **5C (11 s):** `Wide aerial of a chain of explosions along the brick Normandy cliffs, smoke rolling toward the sea.`
+- **6A (10 s):** `A brick battleship fires its giant guns at sea, slow-motion muzzle blast and shockwave on transparent blue brick water.`
+- **6B (10 s):** `Inside the bunker dust pours from the ceiling as shells hit; [OTTO] covers the candle with his helmet; [KARL] holds [HANS] down.`
+- **6C (10 s):** `Two brick P-51 Mustangs roar low along the cliffs strafing; [KARL] drags [HANS] into the bunker as bullet lines kick up sand behind them.`
+- **6D (10 s):** `Silence after the bombardment; [KARL] looks through the slit; camera pushes through the slit toward the sea.`
 
-### Scene 2 — Troop ship deck (20 s)
-- **2A (10 s):** `Pre-dawn dark blue sky, aerial drone shot over a massive WWII invasion fleet of hundreds of ships stretching to the horizon, barrage balloons floating above, calm sea, slow forward flight.`
-- **2B (5 s):** `On a crowded troop ship deck at pre-dawn, [C1] stands at the rail, takes a small photo of his daughter from his helmet strap, looks at it, tucks it back. Close-up, shallow depth of field.`
-- **2C (5 s):** `On the troop ship deck, [C2] sits nervously cleaning his rifle with trembling hands; [C3] beside him gives a calm nod and pats his helmet. Slow dolly, cold blue light.`
+## ACT 2 (2:10 – 4:40)
+- **7A (12 s):** `POV through the bunker slit: dozens of brick Higgins landing boats race toward the beach.`
+- **7B (13 s):** `[OTTO] loads a fresh ammo belt; [HANS] trembles; [KARL] puts a hand on his shoulder, then aims his rifle through the slit.`
+- **8A (10 s):** `Landing-boat ramps drop; American minifigures dive behind steel hedgehog obstacles on the beach; some pop apart and tumble, no blood.`
+- **8B (10 s):** `[OTTO] fires the MG-42 through the slit, glowing brass casings pouring like a waterfall in slow motion.`
+- **8C (10 s):** `[KARL] fires and works the rifle bolt, then his hands slow down and shake; close-up of his gritted teeth.`
+- **9A (13 s):** `Rifle scope POV: [TOMMY] stranded in the surf without his rifle, terrified; match cut to [HANS]'s scared face.`
+- **9B (12 s):** `[KARL] slowly lowers his rifle; through the smoke [DOC] drags [TOMMY] behind an obstacle.`
+- **10A (10 s):** `A Bangalore torpedo blasts a gap in barbed wire; American minifigures led by [JACK] charge up the sandy bluff.`
+- **10B (10 s):** `[OTTO] swings the MG-42 toward them; bullets spark off the bunker; [JACK] reaches the bunker wall and pulls a grenade pin.`
+- **10C (10 s):** `Slow motion: the grenade bounces through the slit onto the bunker floor.`
+- **11A (10 s):** `[OTTO] shoves [KARL] and [HANS] into the back tunnel and turns toward the grenade; white flash, smoke fills the tunnel.`
+- **11B (15 s):** `[KARL] looks back at [OTTO]'s helmet lying beside the silent MG-42, picks it up, sets it down gently, grabs [HANS] and runs down the dark tunnel toward bright daylight.`
+- **11C (5 s):** `They burst out of the tunnel into blinding sunlight, white flash.`
 
-### Scene 3 — The sky wakes up (12 s)
-- **3A (6 s):** `Low angle from behind [C1]'s shoulder on the ship deck, he looks up; dozens of B-17 bombers appear in the dawn clouds; rack focus from helmet to the planes.`
-- **3B (6 s):** `A B-17 Flying Fortress roars directly over the troop ship filling the frame, camera tilts and rises with it into the clouds.`
+## ACT 3 (4:40 – 6:50)
+- **12A (13 s):** `Midday, [KARL] and [HANS] run along a sunken lane between tall brick hedgerows with retreating German soldiers; a Kübelwagen speeds past.`
+- **12B (12 s):** `P-51s flash overhead; everyone dives into the hedges. Top-down shot.`
+- **13A (13 s):** `A ruined brick French village with a church tower; [KARL] sees [GIRL] hiding in a doorway and gestures for her to go to the cellar; she runs.`
+- **13B (12 s):** `Brick Sherman tanks and American infantry appear at the end of the street. Snap zoom.`
+- **14A (13 s):** `Street fight: [KARL] and [HANS] fire from a window; a Sherman shell blows the church tower apart, bricks raining down in slow motion.`
+- **14B (12 s):** `[KARL] pulls [HANS] under a doorway as a wall collapses into loose bricks.`
+- **15A (13 s):** `The ground trembles, a wall bursts open and a huge plain grey brick Tiger tank rolls through dust. Low hero angle.`
+- **15B (12 s):** `The Tiger's long gun turns and fires; sparks fly off a Sherman's turret; German soldiers cheer but [KARL] stares silently at the burning village.`
+- **16A (10 s):** `Green smoke rises; a brick P-51 with "LUCKY LADY" nose art dives out of the sun and fires rockets. Cockpit POV.`
+- **16B (10 s):** `Rockets and a flanking Sherman's shell hit the Tiger; it explodes and its turret flips into the air, ultra slow motion; the blast throws [KARL] and [HANS] to the ground.`
+- **16C (10 s):** `Smoke clears; [KARL] and [HANS] alone in the rubble, [HANS] hurt and unable to walk. Quiet wide shot, fade into sunset.`
 
----
-
-## ACT 1 — THUNDER FROM THE SKY (0:40 – 2:10)
-
-### Scene 4 — B-17 cockpit (15 s)
-- **4A (8 s):** `Inside a vibrating B-17 cockpit at golden sunrise, [C5] grips the yoke, co-pilot points ahead to the French coastline, huge bomber formation visible through the windshield. Handheld.`
-- **4B (7 s):** `Exterior shot pulling back from the nose of a B-17 to reveal a vast formation of bombers in tight boxes above the clouds at sunrise.`
-
-### Scene 5 — Flak (15 s)
-- **5A (8 s):** `Black puffs of anti-aircraft flak explode around a B-17 formation; one bomber's engine catches fire trailing black smoke. Orbiting camera.`
-- **5B (7 s):** `POV through a B-17 cockpit window as shrapnel cracks the glass; close-up of [C5]'s determined eyes above his oxygen mask.`
-
-### Scene 6 — Dogfight (30 s)
-- **6A (8 s):** `German Bf-109 fighters dive out of the sun toward the bomber formation; P-51 Mustangs scream in from above to intercept. Chase camera.`
-- **6B (8 s):** `[C4] in his P-51 "LUCKY LADY" rolls hard, gun-camera crosshair view, tracers hit a Bf-109 which bursts into flames and spirals down, slow motion explosion.`
-- **6C (7 s):** `A Bf-109 on the tail of the P-51 "LUCKY LADY", bullets rip its wing; the Mustang pulls a tight vertical loop and ends up behind the enemy and shoots it down. Spinning camera.`
-- **6D (7 s):** `The P-51 "LUCKY LADY" flies past the B-17 cockpit window; [C4] gives a thumbs-up to the bomber crew. Side tracking shot.`
-
-### Scene 7 — Bombs away (15 s)
-- **7A (5 s):** `B-17 bomb bay doors open, rows of bombs drop out in slow motion over the clouds.`
-- **7B (5 s):** `Continuous shot following a single falling bomb down toward German coastal cliffs and concrete bunkers.`
-- **7C (5 s):** `Wide aerial view of a chain of massive explosions ripping across Normandy cliffs, bunkers and trenches; smoke fills the frame at the end.`
-
-### Scene 8 — Naval bombardment (15 s)
-- **8A (7 s):** `WWII battleship turns its huge gun turrets and fires, massive muzzle blast and shockwave flattening the sea, slow motion, low angle.`
-- **8B (8 s):** `Sweeping aerial shot from the battleship down to hundreds of Higgins landing boats racing toward a smoking beach with white wakes, camera dives toward one boat.`
-
----
-
-## ACT 2 — HELL ON THE BEACH (2:10 – 4:40)
-
-### Scene 9 — Inside the Higgins boat (25 s)
-- **9A (8 s):** `Inside a cramped, soaked Higgins landing craft rocking violently, soldiers packed tight, coxswain at the wheel, sea spray splashing the lens. Handheld.`
-- **9B (8 s):** `Close-up of [C2] squeezing a harmonica with eyes closed; [C3] tightens his medic bag strap; inside a rocking landing craft.`
-- **9C (9 s):** `[C1] checks his Thompson, looks at his men and raises two fingers; sparks as bullets ping off the steel front ramp of the landing craft.`
-
-### Scene 10 — Ramp drops (20 s)
-- **10A (8 s):** `View from the back of a landing craft as the steel ramp slams down, revealing a burning, smoke-filled Omaha Beach with obstacles, machine-gun tracers incoming, soldiers dropping out of frame.`
-- **10B (6 s):** `[C1] shouts silently and leaps over the side of the landing craft into the sea; [C2] and [C3] follow.`
-- **10C (6 s):** `Camera plunges underwater with the soldiers as they hit the water.`
-
-### Scene 11 — Underwater (13 s)
-- **11A (7 s):** `Slow motion underwater, light rays from above, bubble trails of bullets streaking through the water; [C2] sinking under his heavy pack.`
-- **11B (6 s):** `Underwater, [C1] cuts [C2]'s pack strap with a knife and pulls him upward; both break the surface into chaos.`
-
-### Scene 12 — Beach chaos (27 s)
-- **12A (9 s):** `Continuous knee-height tracking shot following [C1], [C2] and [C3] sprinting between steel Czech hedgehog obstacles on Omaha Beach, burning vehicles, sand fountains from mortars.`
-- **12B (9 s):** `A mortar explodes near [C2], throwing him to the sand; [C3] drags him behind a hedgehog obstacle and checks him; he is okay.`
-- **12C (9 s):** `[C1] behind an obstacle points toward a concrete seawall ahead; the trio sprints through smoke toward it.`
-
-### Scene 13 — The bunker (20 s)
-- **13A (7 s):** `Inside a dark concrete German bunker, [C8] fires an MG-42 through a firing slit, glowing shell casings pouring out like a waterfall in slow motion.`
-- **13B (7 s):** `Close-up of [C8]'s scarred face lit by muzzle flashes; a loader feeds a new ammo belt.`
-- **13C (6 s):** `The MG-42 barrel swings toward the camera, then match cut to [C1]'s face staring at the bunker from behind the seawall.`
-
-### Scene 14 — Seawall plan (15 s)
-- **14A (8 s):** `Soldiers pinned behind a seawall, sand trickling from bullet impacts; [C1] grabs a long Bangalore torpedo tube and gives hand signals to [C2] and [C3].`
-- **14B (7 s):** `[C1] and two soldiers slide a Bangalore torpedo under barbed wire on the beach, over-the-shoulder shot.`
-
-### Scene 15 — Bunker assault (30 s)
-- **15A (6 s):** `A Bangalore torpedo explodes, blasting a gap in the barbed wire, wide shot.`
-- **15B (8 s):** `[C1] charges through the gap and zig-zags up a sandy bluff toward the bunker; [C2] stands and fires his M1 Garand at the bunker slit. Low-angle running shot.`
-- **15C (8 s):** `[C1] presses against the bunker wall, pulls a grenade pin, counts down with fingers, and throws it into the firing slit, slow motion.`
-- **15D (8 s):** `Explosion of smoke and fire bursts out of the bunker slit; [C1] climbs on top and waves; hundreds of soldiers surge up the bluff past the camera, camera rises into an aerial of the beach.`
+## EPILOGUE (6:50 – 8:00)
+- **17A (12 s):** `Sunset; [KARL] ties a white cloth to his bayonet, raises it and steps out of the ruins with hands up. Silhouette.`
+- **17B (13 s):** `[JACK] aims his Thompson at [KARL]; a long tense moment; [JACK] lowers the gun. Slow push-in on both faces.`
+- **18A (10 s):** `[KARL] points to [HANS]; [DOC] kneels and bandages [HANS]'s leg in golden light.`
+- **18B (10 s):** `Behind [DOC] stands [TOMMY]; he and [KARL] recognize each other; [TOMMY] gives a small nod.`
+- **19A (9 s):** `[JACK] and [KARL] sit on rubble and show each other their tiny family photo tiles; tired half-smiles. Close-up of the two photos side by side.`
+- **19B (8 s):** `[GIRL] places a flower on [OTTO]'s helmet resting on the rubble. Warm light.`
+- **20A (8 s):** `[KARL] and [HANS] ride on the back of a brick army truck toward the sea at sunset; camera rises high over Normandy as P-51s fly into the sun; fade to black.` *(add end text in editor)*
 
 ---
-
-## ACT 3 — IRON AND FIRE (4:40 – 6:50)
-
-### Scene 16 — Shermans roll ashore (20 s)
-- **16A (8 s):** `Midday, a landing ship opens its doors, M4 Sherman tanks roll onto the beach, tank tracks crushing sand past a ground-level camera.`
-- **16B (6 s):** `[C6] stands in the hatch of the Sherman "IRON MAIDEN"; [C1], [C2] and [C3] climb onto the back of the tank.`
-- **16C (6 s):** `Riding on the tank, [C2] plays a few notes on his harmonica; [C3] smiles. Dolly shot, warm light.`
-
-### Scene 17 — Village & sniper (25 s)
-- **17A (9 s):** `Sherman tank column moves through Normandy hedgerows into a quiet ruined French village with a stone church tower, slow tracking shot.`
-- **17B (8 s):** `POV through a sniper scope from the church tower, crosshair on [C2] riding the tank.`
-- **17C (8 s):** `[C1] spots a glint in the church tower; a bullet sparks off the tank armor near [C2]; the squad jumps off and takes cover. Snap zoom.`
-
-### Scene 18 — Street fight (25 s)
-- **18A (9 s):** `Street fight in a ruined French village: [C1] leads the squad house-to-house, German soldiers firing from windows, glass shattering. Fast camera through doorways.`
-- **18B (8 s):** `The Sherman "IRON MAIDEN" turns its turret and blasts the church tower, which collapses in dust, slow motion.`
-- **18C (8 s):** `[C3] runs under fire dragging a wounded soldier to cover; [C1] tackles a German soldier rushing [C2] from an alley.`
-
-### Scene 19 — The Tiger (20 s)
-- **19A (7 s):** `Dust shakes off rooftops as the ground trembles; a stone wall at the end of the street explodes outward and a massive Tiger I tank breaks through. Low hero angle.`
-- **19B (6 s):** `[C9] lowers his binoculars; the Tiger's long 88mm gun rotates slowly toward the camera, menacing.`
-- **19C (7 s):** `The Tiger fires; the shell bounces off the Sherman's turret in a shower of sparks.`
-
-### Scene 20 — Sherman vs Tiger + air support (40 s)
-- **20A (8 s):** `The Sherman reverses behind a building; [C1] throws a smoke grenade into the street, thick green smoke billowing upward.`
-- **20B (8 s):** `[C4] in his P-51 spots green smoke below the village and rolls into a steep dive; cockpit POV.`
-- **20C (8 s):** `The Sherman races around a village block to flank the Tiger while the Tiger's turret turns too slowly.`
-- **20D (8 s):** `Rockets leave the P-51's wings in slow motion and hit the Tiger's engine deck; at the same moment the Sherman fires into its side; the Tiger explodes, turret flipping into the air, ultra slow motion.`
-- **20E (8 s):** `The P-51 passes low over the village wagging its wings; soldiers raise their rifles and cheer; the plane flies toward the sun, lens flare whites out the screen.`
-
----
-
-## EPILOGUE — STEEL DAWN (6:50 – 8:00)
-
-### Scene 21 — Sunset on the hill (30 s)
-- **21A (10 s):** `Golden sunset over a Normandy village and the distant sea with the fleet, gentle smoke rising, wide peaceful shot.`
-- **21B (10 s):** `On a grassy hill at sunset, [C3] bandages [C2]'s arm; [C2] pulls out a harmonica with a bullet dent and shows it to [C1]; they laugh quietly.`
-- **21C (10 s):** `[C1] looks at the small photo of his daughter and smiles, warm golden backlight, close-up.`
-
-### Scene 22 — The fallen (20 s)
-- **22A (10 s):** `Silhouettes at sunset: a row of rifles planted bayonet-down with helmets on top as memorials; [C1] removes his helmet and bows his head; [C2] and [C3] join him.`
-- **22B (10 s):** `A little French girl places a flower beside a helmet; [C1] kneels and gently gives her a small chocolate bar. Close-up of the flower, warm light.`
-
-### Scene 23 — Final shot (12 s)
-- **23A (12 s):** `[C1], [C2] and [C3] put on their helmets and walk toward the horizon with a column of tanks and troops; crane up to a huge aerial of the army moving inland as P-51s fly in formation into the sunset.`
-
-### Scene 24 — End title (8 s)
-- **24A (8 s):** `Slow fade to black over a single distant plane silhouette in the sunset sky.`
-  *(Add text in the editor: "In honor of all who fought for freedom." + "STEEL DAWN".)*
-
----
-
-## Clip count summary
-**63 clips** across 24 scenes ≈ 8:00 total. Assemble in order in your editor (CapCut, Premiere, DaVinci Resolve),
-then layer SFX and music according to sections 4–5 of `WWII_3D_Animation_Script.md`.
+**54 clips** in total. Assemble in order, then add SFX and music using sections 4–5 of `WWII_3D_Animation_Script.md`.
