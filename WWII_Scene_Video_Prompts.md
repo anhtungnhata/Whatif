@@ -165,5 +165,5 @@ motion blur, highly detailed, no text, no subtitles, no logos, no gore.
 ---
 
 ## Clip count summary
-**61 clips** across 24 scenes ≈ 8:00 total. Assemble in order in your editor (CapCut, Premiere, DaVinci Resolve),
+**63 clips** across 24 scenes ≈ 8:00 total. Assemble in order in your editor (CapCut, Premiere, DaVinci Resolve),
 then layer SFX and music according to sections 4–5 of `WWII_3D_Animation_Script.md`.
