@@ -1,0 +1,396 @@
+<title>Great Emu War Cast</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Special+Elite&display=swap">
+<style>
+/* Layout: one newsreel column — animated hook scene on top, then the cast as model sheets, then a beat board. Single sepia look by design. */
+:root{
+  --paper:#efe2c6; --paper-2:#e4d2ad; --ink:#2b2117; --sepia:#7a5a36; --dust:#c9a86f;
+  --rust:#a2442a; --khaki:#7d7448; --rule:#b99b6c;
+  --display:"Alfa Slab One", "Rockwell", Georgia, serif;
+  --body:"Literata", Georgia, "Times New Roman", serif;
+  --type:"Special Elite", "Courier New", monospace;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:28px 64px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:48px}
+header{display:flex;flex-direction:column;gap:6px}
+.slate{font-family:var(--type);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sepia)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1;margin:0;text-wrap:balance;letter-spacing:.01em}
+h1 em{font-style:normal;color:var(--rust)}
+.lede{max-width:62ch;margin:6px 0 0;color:var(--sepia)}
+h2{font-family:var(--display);font-weight:400;font-size:28px;margin:0;line-height:1.1;text-wrap:balance}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+
+/* ---------- Scene ---------- */
+.screen{position:relative;border:10px solid var(--ink);border-radius:6px;background:var(--ink);overflow:hidden}
+.screen svg{display:block;width:100%;height:auto;overflow:hidden}
+.sub{position:absolute;left:0;right:0;bottom:4%;text-align:center;padding:0 6%;pointer-events:none}
+.sub span{display:inline-block;font-family:var(--type);color:#f6ecd4;background:rgba(30,22,14,.72);padding:4px 10px;font-size:clamp(12px,1.9vw,18px);line-height:1.4;transition:opacity .4s}
+.tc{position:absolute;top:10px;left:12px;font-family:var(--type);font-size:12px;color:#f6ecd4;opacity:.8;letter-spacing:.08em}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.controls p{margin:0;font-size:14px;color:var(--sepia);max-width:60ch}
+button{font-family:var(--type);font-size:14px;letter-spacing:.06em;background:var(--ink);color:var(--paper);border:0;padding:9px 16px;cursor:pointer;border-radius:2px}
+button:hover{background:var(--rust)}
+button:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+
+/* scene animation */
+.flicker{animation:flick 0.18s steps(2) infinite}
+@keyframes flick{0%{opacity:.10}100%{opacity:.16}}
+.walk{animation:walkin 7s cubic-bezier(.3,.6,.4,1) forwards}
+.walk.far{animation-duration:9s;animation-delay:1.2s}
+.walk.far2{animation-duration:10s;animation-delay:2.4s}
+@keyframes walkin{from{transform:translateX(520px)}to{transform:translateX(0)}}
+.leg-a,.leg-b{transform-box:fill-box;transform-origin:50% 0}
+.leg-a{animation:stepA .9s ease-in-out infinite}
+.leg-b{animation:stepA .9s ease-in-out infinite reverse}
+@keyframes stepA{0%{transform:rotate(14deg)}50%{transform:rotate(-14deg)}100%{transform:rotate(14deg)}}
+.bob{animation:bob .45s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(5px)}}
+.tremble{animation:trem .12s linear infinite}
+@keyframes trem{0%{transform:translate(0,0)}50%{transform:translate(0.6px,-0.5px)}100%{transform:translate(-0.5px,0.4px)}}
+.sweat{animation:drip 2.2s ease-in infinite}
+@keyframes drip{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(26px);opacity:0}}
+.dust circle{animation:drift 9s linear infinite}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-120px)}}
+.wheat path{transform-box:fill-box;transform-origin:50% 100%;animation:sway 3.4s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
+.paused *{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- Cast ---------- */
+.cast{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+@media (max-width:760px){.cast{grid-template-columns:1fr}}
+.card{background:var(--paper-2);border:2px solid var(--ink);display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;padding:18px}
+@media (max-width:440px){.card{grid-template-columns:1fr}.card .fig{max-width:180px}}
+.fig{background:var(--paper);border:1px dashed var(--rule);display:flex;align-items:center;justify-content:center;padding:8px 4px 0}
+.fig svg{width:100%;height:auto;display:block}
+.card h3{font-family:var(--display);font-weight:400;font-size:24px;margin:0;line-height:1.1}
+.role{font-family:var(--type);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--rust);margin:2px 0 8px}
+.card p{margin:0 0 8px;font-size:15px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:8px 0 0;font-size:14px}
+.card dt{font-family:var(--type);color:var(--sepia);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.card dd{margin:0}
+.sw{display:flex;gap:6px;margin-top:10px}
+.sw i{width:22px;height:22px;border:1px solid var(--ink);display:block}
+.quote{font-style:italic;color:var(--sepia)}
+
+/* expressions */
+.expr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:640px){.expr{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.expr figure{margin:0;background:var(--paper-2);border:1px solid var(--rule);padding:10px;display:flex;flex-direction:column;gap:6px}
+.expr svg{width:100%;height:auto}
+.expr figcaption{font-family:var(--type);font-size:13px;text-align:center}
+.expr small{display:block;font-family:var(--body);font-size:12.5px;color:var(--sepia);letter-spacing:0}
+
+/* beat board */
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
+th{font-family:var(--type);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:12px;text-align:left;color:var(--sepia);border-bottom:2px solid var(--ink);padding:8px 10px}
+td{border-bottom:1px solid var(--rule);padding:10px;vertical-align:top}
+td:first-child{font-family:var(--type);white-space:nowrap;font-variant-numeric:tabular-nums}
+td.nar{font-style:italic}
+.note{font-size:13.5px;color:var(--sepia);max-width:70ch;margin:0}
+</style>
+
+<!-- ============ Reusable character symbols ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- BIG RUFFLE: lead emu, facing right -->
+    <symbol id="emu" viewBox="0 0 220 300">
+      <g stroke="#2b2117" stroke-linecap="round" stroke-linejoin="round">
+        <!-- legs -->
+        <path d="M92 188 L84 236 L94 276" fill="none" stroke-width="8" stroke="#5e4a33"/>
+        <path d="M120 188 L128 234 L120 276" fill="none" stroke-width="8" stroke="#5e4a33"/>
+        <path d="M94 276 l18 2 M94 276 l10 9 M94 276 l-8 6" stroke-width="5" stroke="#5e4a33"/>
+        <path d="M120 276 l18 2 M120 276 l10 9 M120 276 l-8 6" stroke-width="5" stroke="#5e4a33"/>
+        <!-- body shag -->
+        <path d="M34 150 Q40 104 100 102 Q160 100 170 150 Q168 186 156 196 L150 186 L143 202 L134 189 L126 206 L117 192 L108 208 L99 193 L90 206 L81 191 L72 203 L64 188 L56 198 L50 184 Q34 174 34 150Z" fill="#7a6248" stroke-width="3"/>
+        <path d="M60 140 q12 -10 24 0 M92 128 q12 -10 24 0 M118 146 q12 -10 24 0 M70 166 q12 -10 24 0 M104 170 q12 -10 24 0" fill="none" stroke="#4d3b29" stroke-width="2.5"/>
+        <!-- tail fluff -->
+        <path d="M36 150 q-14 -6 -18 -20 q12 2 22 10" fill="#6a543d" stroke-width="3"/>
+        <!-- neck -->
+        <path d="M146 120 Q160 90 152 58" fill="none" stroke="#2b2117" stroke-width="22"/>
+        <path d="M146 120 Q160 90 152 58" fill="none" stroke="#8d949a" stroke-width="16"/>
+        <path d="M138 124 q8 -12 20 -6 q-2 10 -14 14z" fill="#7a6248" stroke-width="2.5"/>
+        <!-- head -->
+        <circle cx="154" cy="48" r="18" fill="#8d949a" stroke-width="3"/>
+        <path d="M168 44 L196 52 L168 58 Z" fill="#3a2e22" stroke-width="2.5"/>
+        <path d="M168 52 L190 52" stroke="#efe2c6" stroke-width="1.2"/>
+        <!-- hair tuft -->
+        <path d="M146 32 q-4 -14 4 -18 M154 30 q2 -14 10 -16 M140 38 q-10 -8 -6 -18" fill="none" stroke-width="3"/>
+        <!-- smug eye -->
+        <circle cx="158" cy="44" r="8" fill="#f6ecd4" stroke-width="2.5"/>
+        <circle cx="161" cy="45" r="3.6" fill="#a2442a" stroke="none"/>
+        <circle cx="161.6" cy="45.4" r="1.8" fill="#2b2117" stroke="none"/>
+        <path d="M149.5 42 Q158 34 166.5 42 Z" fill="#6f777d" stroke-width="2.5"/>
+      </g>
+    </symbol>
+
+    <!-- SARGE MAC: stout, unflappable -->
+    <symbol id="sarge" viewBox="0 0 200 300">
+      <g stroke="#2b2117" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="70" y="214" width="24" height="66" rx="6" fill="#6b6340"/>
+        <rect x="106" y="214" width="24" height="66" rx="6" fill="#6b6340"/>
+        <path d="M70 248 h24 M70 258 h24 M70 268 h24 M106 248 h24 M106 258 h24 M106 268 h24" stroke-width="1.5"/>
+        <ellipse cx="80" cy="284" rx="18" ry="8" fill="#3a2e22"/>
+        <ellipse cx="122" cy="284" rx="18" ry="8" fill="#3a2e22"/>
+        <path d="M58 140 Q52 118 76 114 L124 114 Q148 118 142 140 L152 196 Q154 226 100 226 Q46 226 48 196Z" fill="#8a7f52"/>
+        <rect x="48" y="188" width="104" height="11" fill="#5a4a30"/>
+        <rect x="93" y="186" width="14" height="15" fill="#c9a86f"/>
+        <circle cx="100" cy="140" r="3" fill="#c9a86f"/><circle cx="100" cy="160" r="3" fill="#c9a86f"/>
+        <path d="M66 140 h22 v18 h-22z M112 140 h22 v18 h-22z" fill="#7d7448" stroke-width="2"/>
+        <path d="M58 128 Q36 160 46 196" fill="none" stroke-width="16"/>
+        <path d="M58 128 Q36 160 46 196" fill="none" stroke="#8a7f52" stroke-width="10"/>
+        <path d="M142 128 Q164 160 154 196" fill="none" stroke-width="16"/>
+        <path d="M142 128 Q164 160 154 196" fill="none" stroke="#8a7f52" stroke-width="10"/>
+        <circle cx="46" cy="198" r="9" fill="#e3b892"/><circle cx="154" cy="198" r="9" fill="#e3b892"/>
+        <circle cx="70" cy="92" r="8" fill="#e3b892"/><circle cx="130" cy="92" r="8" fill="#e3b892"/>
+        <circle cx="100" cy="90" r="31" fill="#e3b892"/>
+        <ellipse cx="100" cy="97" rx="10" ry="9" fill="#d48f6e"/>
+        <path d="M84 80 l11 4 M116 80 l-11 4" stroke-width="4"/>
+        <circle cx="90" cy="88" r="3" fill="#2b2117" stroke="none"/><circle cx="110" cy="88" r="3" fill="#2b2117" stroke="none"/>
+        <path d="M76 108 Q88 98 100 105 Q112 98 124 108 Q112 117 100 110 Q88 117 76 108Z" fill="#5b3b22"/>
+        <path d="M72 96 Q100 132 128 96" fill="none" stroke-width="1.5"/>
+        <!-- slouch hat -->
+        <path d="M48 66 Q42 38 62 26 Q68 46 72 62Z" fill="#6f6440"/>
+        <circle cx="58" cy="44" r="5" fill="#c9a86f" stroke-width="2"/>
+        <ellipse cx="102" cy="66" rx="50" ry="9" fill="#6f6440"/>
+        <path d="M70 66 Q72 34 102 32 Q132 34 134 66Z" fill="#7d7448"/>
+        <path d="M71 58 Q102 51 133 58 L134 65 Q102 58 70 65Z" fill="#b9a679" stroke-width="2"/>
+      </g>
+    </symbol>
+
+    <!-- GUNNER OLLIE: lanky, nervous -->
+    <symbol id="gunner" viewBox="0 0 200 300">
+      <g stroke="#2b2117" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="82" y="200" width="15" height="80" rx="5" fill="#6b6340"/>
+        <rect x="104" y="200" width="15" height="80" rx="5" fill="#6b6340"/>
+        <ellipse cx="88" cy="284" rx="15" ry="7" fill="#3a2e22"/>
+        <ellipse cx="114" cy="284" rx="15" ry="7" fill="#3a2e22"/>
+        <path d="M76 132 Q100 122 124 132 L122 206 L78 206Z" fill="#8a7f52"/>
+        <rect x="76" y="194" width="48" height="9" fill="#5a4a30"/>
+        <path d="M78 136 Q62 170 74 200" fill="none" stroke-width="13"/>
+        <path d="M78 136 Q62 170 74 200" fill="none" stroke="#8a7f52" stroke-width="8"/>
+        <path d="M122 136 Q138 170 126 200" fill="none" stroke-width="13"/>
+        <path d="M122 136 Q138 170 126 200" fill="none" stroke="#8a7f52" stroke-width="8"/>
+        <circle cx="74" cy="203" r="7" fill="#efcaa6"/><circle cx="126" cy="203" r="7" fill="#efcaa6"/>
+        <rect x="93" y="98" width="14" height="36" fill="#efcaa6"/>
+        <circle cx="101" cy="118" r="4" fill="#e3b892" stroke-width="2"/>
+        <ellipse cx="74" cy="80" rx="9" ry="12" fill="#efcaa6"/><ellipse cx="126" cy="80" rx="9" ry="12" fill="#efcaa6"/>
+        <ellipse cx="100" cy="78" rx="25" ry="29" fill="#efcaa6"/>
+        <circle cx="90" cy="78" r="8.5" fill="#f6ecd4"/><circle cx="111" cy="78" r="8.5" fill="#f6ecd4"/>
+        <circle cx="93" cy="78" r="2.6" fill="#2b2117" stroke="none"/><circle cx="114" cy="78" r="2.6" fill="#2b2117" stroke="none"/>
+        <path d="M82 66 L95 63 M118 66 L106 63" stroke-width="3"/>
+        <path d="M89 100 Q94 95 99 100 Q104 105 110 99" fill="none" stroke-width="2.5"/>
+        <path d="M100 82 q4 8 -2 10" fill="none" stroke-width="2"/>
+        <g fill="#c48a63" stroke="none"><circle cx="84" cy="90" r="1.3"/><circle cx="88" cy="93" r="1.3"/><circle cx="114" cy="91" r="1.3"/><circle cx="118" cy="88" r="1.3"/></g>
+        <!-- oversized hat, slipping -->
+        <g transform="rotate(-7 100 54)">
+          <path d="M42 56 Q36 26 58 14 Q64 36 68 52Z" fill="#6f6440"/>
+          <circle cx="54" cy="33" r="5" fill="#c9a86f" stroke-width="2"/>
+          <ellipse cx="102" cy="58" rx="60" ry="10" fill="#6f6440"/>
+          <path d="M66 58 Q68 20 102 18 Q136 20 138 58Z" fill="#7d7448"/>
+          <path d="M67 49 Q102 41 137 49 L138 57 Q102 49 66 57Z" fill="#b9a679" stroke-width="2"/>
+        </g>
+        <path id="drop" d="M128 70 q-5 8 0 11 q5 -3 0 -11z" fill="#a9bcc0" stroke-width="1.5"/>
+      </g>
+    </symbol>
+
+    <!-- LEWIE: the Lewis gun -->
+    <symbol id="lewis" viewBox="0 0 270 90">
+      <g stroke="#2b2117" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M6 44 L52 36 L60 54 L14 64 Q4 60 6 44Z" fill="#7a5a36"/>
+        <rect x="56" y="32" width="40" height="22" rx="3" fill="#3a3a33"/>
+        <path d="M70 54 l-4 18 l10 0 l2 -18" fill="#3a3a33"/>
+        <rect x="94" y="28" width="118" height="28" rx="12" fill="#4b4b42"/>
+        <path d="M108 30 v24 M120 30 v24 M132 30 v24 M144 30 v24 M156 30 v24 M168 30 v24 M180 30 v24 M192 30 v24" stroke="#6c6c60" stroke-width="2"/>
+        <rect x="210" y="36" width="50" height="11" rx="3" fill="#3a3a33"/>
+        <ellipse cx="88" cy="24" rx="36" ry="8" fill="#55554b"/>
+        <ellipse cx="88" cy="21" rx="36" ry="8" fill="#6c6c60"/>
+        <circle cx="88" cy="21" r="4" fill="#2b2117"/>
+        <path d="M196 56 L180 86 M200 56 L216 86" fill="none" stroke-width="4"/>
+      </g>
+    </symbol>
+
+    <!-- emu legs, cropped at body (for low camera) -->
+    <symbol id="legs" viewBox="0 0 120 340">
+      <g stroke="#2b2117" stroke-linecap="round" stroke-linejoin="round">
+        <g class="leg-a"><path d="M42 30 L34 180 L46 316" fill="none" stroke="#5e4a33" stroke-width="13"/><path d="M46 316 l30 4 M46 316 l16 16 M46 316 l-14 10" stroke="#5e4a33" stroke-width="8"/></g>
+        <g class="leg-b"><path d="M78 30 L88 176 L78 316" fill="none" stroke="#4e3d2a" stroke-width="13"/><path d="M78 316 l30 4 M78 316 l16 16 M78 316 l-14 10" stroke="#4e3d2a" stroke-width="8"/></g>
+        <path d="M-10 0 H130 V30 L120 48 L110 32 L100 52 L90 34 L80 54 L70 34 L60 52 L50 32 L40 50 L30 32 L20 48 L8 30 L-2 44 Z" fill="#7a6248" stroke-width="3"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header>
+    <div class="slate">The Great Emu War · Hook 0:00–0:15 · Character design v1</div>
+    <h1>Hai người lính, một khẩu súng, <em>một ngàn con đà điểu</em></h1>
+    <p class="lede">Bản dựng thử dàn nhân vật hoạt hình cho cảnh mở đầu: ruộng lúa mì sepia, khẩu Lewis gun, và những đôi chân đà điểu bước vào khung hình. Phong cách gợi phim thời sự 1932: nét mực dày, màu bụi đất, hạt phim nhấp nháy.</p>
+  </header>
+
+  <!-- ============ HOOK SCENE ============ -->
+  <section style="display:flex;flex-direction:column;gap:14px">
+    <div class="sec-head"><h2>Cảnh Hook, dựng thử</h2><span class="slate">Western Australia · Nov 1932</span></div>
+    <div class="screen" id="screen">
+      <svg viewBox="0 0 800 420" role="img" aria-label="Hai người lính nấp sau khẩu Lewis gun giữa ruộng lúa mì, những đôi chân đà điểu bước vào khung hình từ bên phải">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9d6ad"/><stop offset="1" stop-color="#cfae7c"/></linearGradient>
+          <radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="55%" stop-color="#2b2117" stop-opacity="0"/><stop offset="100%" stop-color="#2b2117" stop-opacity=".75"/></radialGradient>
+          <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .17  0 0 0 0 .13  0 0 0 0 .09  0 0 0 .9 0"/></filter>
+        </defs>
+        <rect width="800" height="420" fill="url(#sky)"/>
+        <circle cx="620" cy="90" r="46" fill="#f3e4c0" opacity=".7"/>
+        <path d="M0 250 Q120 236 240 246 T480 242 T800 246 V420 H0Z" fill="#c09a62"/>
+        <path d="M0 270 Q160 258 320 268 T640 262 T800 268 V420 H0Z" fill="#b38b55"/>
+
+        <!-- far emus (small, whole) -->
+        <g class="walk far2"><g class="bob"><use href="#emu" x="560" y="186" width="58" height="80"/></g></g>
+        <g class="walk far"><g class="bob"><use href="#emu" x="470" y="196" width="70" height="96"/></g></g>
+
+        <!-- near emu legs, huge, body cropped above frame -->
+        <g class="walk"><g class="bob"><use href="#legs" x="600" y="-12" width="120" height="340"/></g></g>
+
+        <!-- wheat stalks -->
+        <g class="wheat" stroke="#8c6a43" stroke-width="2.5" fill="none" stroke-linecap="round">
+          <path d="M440 330 q-4 -50 4 -90 m0 0 l-6 -8 m6 8 l6 -8 m-6 -2 l-6 -8 m6 8 l6 -8"/>
+          <path d="M470 335 q4 -50 -2 -96 m0 0 l-6 -8 m6 8 l6 -8 m-6 -2 l-6 -8 m6 8 l6 -8"/>
+          <path d="M760 340 q-4 -60 6 -104 m0 0 l-6 -8 m6 8 l6 -8 m-6 -2 l-6 -8 m6 8 l6 -8"/>
+          <path d="M735 345 q4 -56 -4 -98 m0 0 l-6 -8 m6 8 l6 -8 m-6 -2 l-6 -8 m6 8 l6 -8"/>
+        </g>
+
+        <!-- soldiers behind the gun -->
+        <use href="#gunner" x="40" y="150" width="150" height="225"/>
+        <g class="sweat"><path d="M140 205 q-5 8 0 11 q5 -3 0 -11z" fill="#a9bcc0" stroke="#2b2117" stroke-width="1.5"/></g>
+        <use href="#sarge" x="150" y="168" width="150" height="225"/>
+        <g class="tremble"><use href="#lewis" x="190" y="262" width="230" height="77"/></g>
+
+        <!-- sandbag mound in front -->
+        <g stroke="#2b2117" stroke-width="3" fill="#a88a5c">
+          <rect x="10" y="318" width="96" height="40" rx="18"/><rect x="98" y="318" width="96" height="40" rx="18"/><rect x="186" y="318" width="96" height="40" rx="18"/>
+          <rect x="-20" y="350" width="110" height="44" rx="20"/><rect x="82" y="350" width="110" height="44" rx="20"/><rect x="184" y="350" width="110" height="44" rx="20"/><rect x="286" y="350" width="80" height="44" rx="20"/>
+        </g>
+        <path d="M0 395 H800 V420 H0Z" fill="#8c6a43"/>
+
+        <g class="dust" fill="#f3e4c0" opacity=".55">
+          <circle cx="300" cy="200" r="2"/><circle cx="520" cy="150" r="1.6"/><circle cx="680" cy="260" r="2.2"/><circle cx="410" cy="300" r="1.4"/><circle cx="760" cy="180" r="1.8"/>
+        </g>
+        <rect width="800" height="420" fill="url(#vig)"/>
+        <rect class="flicker" width="800" height="420" filter="url(#grain)"/>
+      </svg>
+      <div class="tc" id="tc">00:00</div>
+      <div class="sub"><span id="subt">November, 1932. Western Australia.</span></div>
+    </div>
+    <div class="controls">
+      <p>Hoạt cảnh 15 giây, phụ đề chạy theo lời dẫn. Các đôi chân đà điểu bước vào từ phải, khẩu súng run nhẹ, Gunner đổ mồ hôi.</p>
+      <div style="display:flex;gap:8px"><button id="replay" type="button">Phát lại</button><button id="pause" type="button">Tạm dừng</button></div>
+    </div>
+  </section>
+
+  <!-- ============ CAST ============ -->
+  <section style="display:flex;flex-direction:column;gap:18px">
+    <div class="sec-head"><h2>Dàn nhân vật</h2><span class="slate">Model sheet · front / ¾ view</span></div>
+    <div class="cast">
+      <article class="card">
+        <div class="fig"><svg viewBox="0 0 220 300" aria-label="Big Ruffle"><use href="#emu"/></svg></div>
+        <div>
+          <h3>Big Ruffle</h3>
+          <div class="role">Đà điểu đầu đàn · “phản diện” dễ thương</div>
+          <p>Con đà điểu to nhất đàn, mắt lúc nào cũng khép hờ đầy tự mãn. Không bao giờ chạy, chỉ bước thong thả. Đạn bay qua thì nghiêng cổ né như đang tránh một con ruồi.</p>
+          <dl><dt>Hình khối</dt><dd>Thân bờm xờm hình giọt nước, cổ dài cong chữ S, chân rất dài so với thân</dd><dt>Điểm nhận diện</dt><dd>Mắt cam gỉ sét, mí nửa khép, chỏm lông dựng</dd><dt>Diễn xuất</dt><dd>Chậm, tự tin. Chỉ nhìn thẳng ống kính đúng một lần.</dd></dl>
+          <div class="sw"><i style="background:#7a6248"></i><i style="background:#8d949a"></i><i style="background:#a2442a"></i><i style="background:#5e4a33"></i></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="fig"><svg viewBox="0 0 200 300" aria-label="Sarge Mac"><use href="#sarge"/></svg></div>
+        <div>
+          <h3>Sarge Mac</h3>
+          <div class="role">Trung sĩ · người tin vào kế hoạch</div>
+          <p>Lùn, chắc nịch, ria mép rậm như bàn chải. Tin tuyệt đối vào khẩu súng và vào 10.000 viên đạn. Càng thua, ria càng dựng lên.</p>
+          <dl><dt>Hình khối</dt><dd>Hình vuông và tròn, trọng tâm thấp, vững chãi</dd><dt>Điểm nhận diện</dt><dd>Mũ slouch Úc gập một bên vành, ria mép, bụng tròn</dd><dt>Câu cửa miệng</dt><dd class="quote">“Steady, lad. They're only birds.”</dd></dl>
+          <div class="sw"><i style="background:#8a7f52"></i><i style="background:#6f6440"></i><i style="background:#e3b892"></i><i style="background:#5b3b22"></i></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="fig"><svg viewBox="0 0 200 300" aria-label="Gunner Ollie"><use href="#gunner"/></svg></div>
+        <div>
+          <h3>Gunner Ollie</h3>
+          <div class="role">Xạ thủ · người đầu tiên nhận ra sự thật</div>
+          <p>Cao lêu nghêu, cổ dài, mũ quá khổ cứ trượt xuống mắt. Mắt to tròn, luôn đổ mồ hôi. Là người đếm số đà điểu và càng đếm càng tái mặt.</p>
+          <dl><dt>Hình khối</dt><dd>Hình chữ nhật dài, mảnh, dễ “run” khi animate</dd><dt>Điểm nhận diện</dt><dd>Mũ quá to nghiêng lệch, tai to, giọt mồ hôi</dd><dt>Câu cửa miệng</dt><dd class="quote">“Sarge… there's a lot more of them.”</dd></dl>
+          <div class="sw"><i style="background:#8a7f52"></i><i style="background:#efcaa6"></i><i style="background:#a9bcc0"></i><i style="background:#c48a63"></i></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="fig" style="align-items:center;padding:16px 6px"><svg viewBox="0 0 270 90" aria-label="Lewie, khẩu Lewis gun"><use href="#lewis"/></svg></div>
+        <div>
+          <h3>Lewie</h3>
+          <div class="role">Khẩu Lewis gun · đạo cụ có “tính cách”</div>
+          <p>Ống làm mát to và hộp đạn tròn trên nóc là hình bóng dễ nhận ra nhất của cảnh. Trong lịch sử súng từng bị kẹt đạn, nên Lewie hợp với gag “ợ khói” rồi tắt ngấm đúng lúc quan trọng.</p>
+          <dl><dt>Hình khối</dt><dd>Ngang dài, nặng phía trước, chân chống mảnh</dd><dt>Gag gợi ý</dt><dd>Hộp đạn quay tròn rồi khựng lại, phụt một vòng khói nhỏ</dd></dl>
+          <div class="sw"><i style="background:#4b4b42"></i><i style="background:#6c6c60"></i><i style="background:#7a5a36"></i></div>
+        </div>
+      </article>
+    </div>
+    <p class="note">Sarge Mac và Gunner Ollie là nhân vật hư cấu, chỉ lấy cảm hứng từ tổ súng máy có thật năm 1932, để kênh tự do cường điệu tính cách mà không gán cho người thật.</p>
+  </section>
+
+  <!-- ============ EXPRESSIONS ============ -->
+  <section style="display:flex;flex-direction:column;gap:18px">
+    <div class="sec-head"><h2>Biểu cảm của Big Ruffle</h2><span class="slate">Expression sheet</span></div>
+    <div class="expr">
+      <figure>
+        <svg viewBox="120 10 90 70"><g stroke="#2b2117" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="154" cy="48" r="18" fill="#8d949a"/><path d="M168 44 L196 52 L168 58 Z" fill="#3a2e22"/><path d="M146 32 q-4 -14 4 -18 M154 30 q2 -14 10 -16" fill="none"/><circle cx="158" cy="44" r="8" fill="#f6ecd4"/><circle cx="161" cy="45" r="3.6" fill="#a2442a" stroke="none"/><circle cx="161.6" cy="45.4" r="1.8" fill="#2b2117" stroke="none"/><path d="M149.5 42 Q158 34 166.5 42 Z" fill="#6f777d"/></g></svg>
+        <figcaption>Smug<small>Mặc định, khi bước vào khung</small></figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="120 10 90 70"><g transform="rotate(-14 154 48)" stroke="#2b2117" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="154" cy="48" r="18" fill="#8d949a"/><path d="M168 44 L196 52 L168 58 Z" fill="#3a2e22"/><path d="M146 32 q-4 -14 4 -18 M154 30 q2 -14 10 -16" fill="none"/><circle cx="158" cy="44" r="10" fill="#f6ecd4"/><circle cx="160" cy="44" r="4.5" fill="#a2442a" stroke="none"/><circle cx="160.5" cy="44" r="2.4" fill="#2b2117" stroke="none"/></g></svg>
+        <figcaption>Curious<small>Nghiêng đầu nhìn nòng súng</small></figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="120 10 90 70"><g stroke="#2b2117" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="154" cy="56" r="18" fill="#8d949a"/><path d="M168 52 L196 60 L168 66 Z" fill="#3a2e22"/><path d="M146 40 q-8 -10 -2 -18 M154 38 q6 -12 14 -12" fill="none"/><path d="M151 52 l7 -3 l7 3" fill="none" stroke-width="3"/><path d="M176 20 l4 -8 M186 26 l8 -4 M170 18 l-2 -8" fill="none" stroke="#a2442a"/></g></svg>
+        <figcaption>Dodge!<small>Nhắm tịt mắt, cúi né đạn</small></figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="120 10 90 70"><g stroke="#2b2117" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="154" cy="48" r="18" fill="#8d949a"/><path d="M168 42 L196 46 L168 50 Z M168 52 L194 60 L168 58 Z" fill="#3a2e22"/><path d="M146 32 q-4 -14 4 -18 M154 30 q2 -14 10 -16" fill="none"/><circle cx="156" cy="44" r="8" fill="#f6ecd4"/><circle cx="153" cy="45" r="3.6" fill="#a2442a" stroke="none"/><circle cx="152.4" cy="45.4" r="1.8" fill="#2b2117" stroke="none"/><path d="M147.5 42 Q156 34 164.5 42 Z" fill="#6f777d"/></g></svg>
+        <figcaption>Victory honk<small>Liếc ống kính, há mỏ kêu</small></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ BEAT BOARD ============ -->
+  <section style="display:flex;flex-direction:column;gap:18px">
+    <div class="sec-head"><h2>Beat board 0:00–0:15</h2><span class="slate">Narration → acting → camera</span></div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Thời gian</th><th>Lời dẫn</th><th>Nhân vật làm gì</th><th>Máy quay</th></tr></thead>
+        <tbody>
+          <tr><td>0:00–0:04</td><td class="nar">November, 1932. Western Australia.</td><td>Ruộng lúa mì đung đưa, bụi bay. Chưa thấy ai.</td><td>Toàn cảnh sepia, hạt phim, pan chậm sang trái</td></tr>
+          <tr><td>0:04–0:07</td><td class="nar">Two soldiers crouch behind a machine gun… waiting.</td><td>Hạ máy thấy Sarge Mac bình thản vuốt ria. Gunner Ollie đẩy mũ lên khỏi mắt.</td><td>Trung cảnh sau lưng khẩu Lewie</td></tr>
+          <tr><td>0:07–0:10</td><td class="nar">A thousand targets are walking straight toward them.</td><td>Đất rung nhẹ. Đôi chân khổng lồ của Big Ruffle bước vào từ phải, sau đó thêm hàng chục đôi chân.</td><td>Góc thấp ngang mặt đất, chân bước qua ống kính</td></tr>
+          <tr><td>0:10–0:12</td><td class="nar">They have ten thousand bullets.</td><td>Sarge vỗ vào thùng đạn đầy tự tin. Hộp đạn của Lewie quay một vòng.</td><td>Cận cảnh thùng đạn và hộp đạn tròn</td></tr>
+          <tr><td>0:12–0:15</td><td class="nar">And they are about to lose… to birds.</td><td>Big Ruffle cúi đầu vào khung, mắt khép hờ nhìn thẳng ống kính. Gunner nuốt khan, giọt mồ hôi rơi.</td><td>Smash cut vào mặt đà điểu, dừng hình, tiêu đề</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+  var lines=[[0,"November, 1932. Western Australia."],[4,"Two soldiers crouch behind a machine gun… waiting."],[7,"A thousand targets are walking straight toward them."],[10,"They have ten thousand bullets."],[12,"And they are about to lose… to birds."]];
+  var subt=document.getElementById('subt'),tc=document.getElementById('tc'),screen=document.getElementById('screen');
+  var t=0,paused=false,timer;
+  function render(){var s=Math.floor(t);var cur=lines[0][1];for(var i=0;i<lines.length;i++){if(s>=lines[i][0])cur=lines[i][1];}
+    if(subt.textContent!==cur)subt.textContent=cur;tc.textContent="00:"+(s<10?"0":"")+s;}
+  function tick(){if(!paused&&t<15){t+=0.25;render();}}
+  function restart(){t=0;render();screen.querySelectorAll('.walk').forEach(function(el){el.style.animation='none';void el.getBBox();el.style.animation='';});}
+  timer=setInterval(tick,250);render();
+  document.getElementById('replay').addEventListener('click',function(){paused=false;screen.classList.remove('paused');document.getElementById('pause').textContent='Tạm dừng';restart();});
+  document.getElementById('pause').addEventListener('click',function(){paused=!paused;screen.classList.toggle('paused',paused);this.textContent=paused?'Tiếp tục':'Tạm dừng';});
+})();
+</script>
