@@ -871,9 +871,9 @@ export const SHOT_SCENES: Record<number, (t: number) => ShotOut> = {
         scene: (
           <>
             <HabInterior view="dusk" lights={0.6} />
-            <F who="P" at={[-2.0, 0, -6.2]} helmet="hip" pose={t > 4 && t < 5 ? { armR: [2.7, 0.2], armL: [1.0, -0.4] } : { armL: [1.0, -0.4], armR: [1.0, -0.4] }} />
-            <F who="M" at={[0.1, 0, -6.8]} helmet="hip" patch pose={idle(t, 1)} />
-            <F who="L" at={[2.2, 0, -6.8]} helmet="hip" pose={idle(t, 2)} />
+            <F who="P" at={[2.0, 0, -6.2]} ry={Math.PI} helmet="hip" pose={t > 4 && t < 5 ? { armR: [2.7, 0.2], armL: [1.0, -0.4] } : { armL: [1.0, -0.4], armR: [1.0, -0.4] }} />
+            <F who="M" at={[-0.1, 0, -6.8]} ry={Math.PI} helmet="hip" patch pose={idle(t, 1)} />
+            <F who="L" at={[-2.2, 0, -6.8]} ry={Math.PI} helmet="hip" pose={idle(t, 2)} />
           </>
         ),
       };
