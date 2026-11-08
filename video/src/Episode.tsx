@@ -223,7 +223,7 @@ const ShotOverlays: React.FC<{ n: number; t: number }> = ({ n, t }) => {
   return null;
 };
 
-export const Episode: React.FC = () => {
+export const Episode: React.FC<{ showSubtitles: boolean }> = ({ showSubtitles }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const idx = Math.min(SHOTS - 1, Math.floor(frame / SHOT_FRAMES));
@@ -252,7 +252,7 @@ export const Episode: React.FC = () => {
       />
       {n > 2 && n < 36 ? <Bug /> : null}
       <Fact text={meta.fact} t={t} />
-      <Subtitle g={g} />
+      {showSubtitles ? <Subtitle g={g} /> : null}
       <ShotOverlays n={n} t={t} />
       <Audio src={staticFile("audio/mix.wav")} />
     </AbsoluteFill>
@@ -261,6 +261,14 @@ export const Episode: React.FC = () => {
 
 export const EpisodeComposition: React.FC = () => (
   <>
-    <Composition id="Episode2Mars" component={Episode} durationInFrames={SHOTS * SHOT_FRAMES} fps={FPS} width={W} height={H} />
+    <Composition
+      id="Episode2Mars"
+      component={Episode}
+      durationInFrames={SHOTS * SHOT_FRAMES}
+      fps={FPS}
+      width={W}
+      height={H}
+      defaultProps={{ showSubtitles: false }}
+    />
   </>
 );
