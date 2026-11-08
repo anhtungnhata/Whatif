@@ -6,5 +6,5 @@
 
 | # | Episode | Script |
 |---|---|---|
-| 2 | What If LEGO Humans Had to Live on Mars? | [episodes/ep02-mars](episodes/ep02-mars/EP02_What_If_LEGO_Humans_Had_to_Live_on_Mars.md) |
+| 2 | What If LEGO Humans Had to Live on Mars? | [script](episodes/ep02-mars/EP02_What_If_LEGO_Humans_Had_to_Live_on_Mars.md) · [video](video/out/LEGO_What_If_EP02_Mars.mp4) · [video source](video/) |
 | 3 | What If the Moon Disappeared? *(teased at the end of Ep. 2)* | — |
